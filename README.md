@@ -95,4 +95,4 @@ pod 'QIMUIKit'
     
 ## 问题反馈
 
--   qchat@qunar.com（邮件）
+-   app@startalk.im（邮件）
