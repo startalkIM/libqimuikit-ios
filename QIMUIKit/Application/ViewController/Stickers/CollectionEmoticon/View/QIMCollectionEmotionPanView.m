@@ -19,8 +19,9 @@ typedef NS_ENUM(NSUInteger, QIMDragCellCollectionViewScrollDirection) {
     QIMDragCellCollectionViewScrollDirectionDown
 };
 
-@interface QIMCollectionEmotionPanView ()
-
+@interface QIMCollectionEmotionPanView () {
+    BOOL _editing;
+}
 @property (nonatomic, strong) NSIndexPath *originalIndexPath;
 @property (nonatomic, strong) NSIndexPath *moveIndexPath;
 @property (nonatomic, weak) UIView *tempMoveCell;
@@ -34,7 +35,7 @@ typedef NS_ENUM(NSUInteger, QIMDragCellCollectionViewScrollDirection) {
 @end
 
 @implementation QIMCollectionEmotionPanView
-
+@synthesize editing = _editing;
 @dynamic delegate;
 @dynamic dataSource;
 
